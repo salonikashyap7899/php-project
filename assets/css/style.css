@@ -1,0 +1,88 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.product-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform for hover */
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+    transform: translateY(-5px); /* Myntra-like lift effect */
+}
+
+.product-image {
+    height: 220px; /* Adjusted for consistency */
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.product-price {
+    font-weight: 700;
+    color: #ff3f6c; /* Myntra's accent color */
+    font-size: 1.2rem;
+}
+
+.btn-primary, .btn-danger { /* Using btn-danger for primary actions like Myntra */
+    background-color: #ff3f6c;
+    border-color: #ff3f6c;
+}
+
+.btn-primary:hover, .btn-danger:hover {
+    background-color: #e6335a;
+    border-color: #e6335a;
+}
+
+/* Search results dropdown */
+#searchResults a.list-group-item {
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+#searchResults a.list-group-item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#searchResults a.list-group-item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#searchResults a.list-group-item:hover {
+    background-color: #ff3f6c;
+    color: white;
+}
+
+/* Category Card Styling */
+.category-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+    padding: 15px;
+    text-align: center;
+}
+
+.category-card:hover {
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+    transform: translateY(-3px);
+}
+
+.category-card img {
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
